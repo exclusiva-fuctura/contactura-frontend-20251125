@@ -7,6 +7,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
@@ -25,6 +26,7 @@ export const material = [
   MatSelectModule,
   MatTooltipModule,
   MatGridListModule,
+  MatFormFieldModule,
   MatPaginatorModule,
   MatDatepickerModule,
   MatNativeDateModule, 
@@ -46,7 +48,11 @@ export const DATE_FORMATS = {
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    material
+  ],
+  exports: [
+    material
   ]
 })
 export class MaterialModule { }
