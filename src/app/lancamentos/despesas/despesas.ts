@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class Despesas {
 
+  tipos: string[] = ['Alimentação', 'Habitacão', 'Transporte', 'Saúde', 'Educação', 'Lazer', 'Outros'];
+  
 }
