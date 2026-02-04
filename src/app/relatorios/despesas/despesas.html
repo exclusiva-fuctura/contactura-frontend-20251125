@@ -77,10 +77,10 @@
       <ng-container matColumnDef="acoes">
         <th mat-header-cell *matHeaderCellDef> Ações </th>
         <td mat-cell *matCellDef="let element">
-          <button mat-mini-fab color="primary" aria-label="Remover despesa" (click)="onDelete(element)">
+          <button mat-mini-fab color="primary" aria-label="Remover despesa" (click)="onRemover(element)">
             <mat-icon matTooltip="Remover">delete</mat-icon>
           </button>
-          <button mat-mini-fab color="primary" aria-label="Editar despesa" (click)="onEdit(element)">
+          <button mat-mini-fab color="primary" aria-label="Editar despesa" (click)="onEditar(element)">
             <mat-icon matTooltip="Editar">edit</mat-icon>
           </button>
         </td>

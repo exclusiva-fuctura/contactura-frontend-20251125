@@ -107,7 +107,7 @@
       <ng-container matColumnDef="acoes">
         <th mat-header-cell *matHeaderCellDef> Ações </th>
         <td mat-cell *matCellDef="let element">
-          <button mat-mini-fab color="primary" aria-label="Remover receita">
+          <button mat-mini-fab color="primary" aria-label="Remover receita" (click)="onRemover(element)">
             <mat-icon>delete</mat-icon>
           </button>
           <button mat-mini-fab color="primary" aria-label="Editar receita">
