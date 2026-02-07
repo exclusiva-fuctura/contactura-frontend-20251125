@@ -47,6 +47,7 @@ export class Dashboard {
 
   /** 
    * carregar as lista de lancamentos (Recitas e Despesas)
+   * @return void
    */
   private listarLancamentos(): void {    
     this.lancamentoService.listarLancamentos().subscribe({
@@ -64,6 +65,11 @@ export class Dashboard {
     });
   }
 
+  /**
+   * Remover despesa da base
+   * @param id numero do lancamento
+   * @return void
+   */
   private removerDespesa(id: number): void {    
     this.lancamentoService.removerLancamento(id).subscribe({
       next: (response) => {
