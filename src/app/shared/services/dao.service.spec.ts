@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { DaoService } from './dao-service';
+import { DaoService } from './dao.service';
 
 describe('DaoService', () => {
   let service: DaoService;

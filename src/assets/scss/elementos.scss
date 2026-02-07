@@ -1,0 +1,16 @@
+
+// importar cores
+@use './cores' as cus;
+
+button.mat-primary {
+  background-color: cus.$btn-color-primary;
+  color: cus.$btn-color-primary-font;
+}
+
+button.mat-primary:disabled {
+  background-color: cus.$btn-color-primary-disabled;
+}
+
+button.mat-primary:hover {
+  background-color: cus.$btn-color-primary-hover;
+}

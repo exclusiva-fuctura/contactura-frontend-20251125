@@ -17,4 +17,5 @@ export class UsuarioService {
   get token(): string {
     return this.state.token;
   }
+
 }

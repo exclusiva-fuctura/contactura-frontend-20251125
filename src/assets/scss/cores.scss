@@ -1,0 +1,7 @@
+@use "sass:color";
+
+/* cores para o botao primay */
+$btn-color-primary: #005cbb;
+$btn-color-primary-font: #fff;
+$btn-color-primary-disabled: #dadadb;
+$btn-color-primary-hover: color.adjust($btn-color-primary, $lightness: -10%);

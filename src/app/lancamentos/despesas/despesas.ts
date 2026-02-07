@@ -11,7 +11,7 @@ import { SharedModule } from '../../shared/shared-module';
 import { MaterialModule } from '../../material/material-module';
 // services
 import { MenuService } from '../../shared/services/menu.service';
-import { LancamentosService } from '../../shared/services/lancamentos-service';
+import { LancamentosService } from '../../shared/services/lancamentos.service';
 // components
 import { Menu } from '../../shared/components/menu/menu';
 import { Logout } from '../../shared/components/logout/logout';

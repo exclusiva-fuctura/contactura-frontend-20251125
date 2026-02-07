@@ -1,10 +1,19 @@
 
+// elementos customizados
+@use '../../../assets/scss/elementos.scss';
+
 .mat-form-field {
     width: 90%;
 }
 
 .mat-button-base {
     margin: 8px 8px 8px 0;
+}
+
+.action-group {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .container {    

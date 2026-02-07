@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { ILogin } from '../../login/login.interface';
 import { Observable } from 'rxjs';
 import { HttpResponse } from '@angular/common/http';
-import { DaoService } from './dao-service';
+import { DaoService } from './dao.service';
 import { AppSettings } from '../../app.settings';
 
 @Injectable({

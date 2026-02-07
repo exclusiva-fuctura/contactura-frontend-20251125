@@ -1,7 +1,9 @@
 import { HttpInterceptorFn } from '@angular/common/http';
 import { inject } from '@angular/core';
-import { LoadingService } from './loading.service';
+// libs
 import { finalize } from 'rxjs';
+// services
+import { LoadingService } from '../services/loading.service';
 
 let totalRequests = 0;
 

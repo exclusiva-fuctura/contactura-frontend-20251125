@@ -9,8 +9,8 @@ import { MaterialModule } from '../material/material-module';
 // models
 import { ILogin } from './login.interface';
 // services
-import { AutenticadorService } from '../shared/services/autenticador-service';
-import { UsuarioService } from '../shared/services/usuario-service';
+import { AutenticadorService } from '../shared/services/autenticador.service';
+import { UsuarioService } from '../shared/services/usuario.service';
 
 @Component({
   selector: 'app-login',

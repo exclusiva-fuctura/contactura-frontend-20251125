@@ -13,11 +13,10 @@
         <mat-form-field appearance="fill">
           <mat-label>Tipo</mat-label>
           <mat-select formControlName="tipo">
-              
-              <mat-option *ngFor="let tipo of tipos; index as i" [value]="tipo">
-              {{tipo}}
-              </mat-option>
-              
+            <!-- removido o *ngFor que estava em deprecated e substituido por @for -->
+            @for (tipo of tipos; track $index) {
+              <mat-option [value]="tipo"> {{tipo}} </mat-option>
+            }                
           </mat-select>
         </mat-form-field>
       </mat-grid-tile>
@@ -51,8 +50,10 @@
       </mat-grid-tile>
       <!-- linha 3 -->
       <mat-grid-tile class="coluna botoes" colspan="3">
+        <div class="action-group">
           <button mat-raised-button (click)="onLimpar()">Limpar</button>
           <button mat-raised-button color="primary" [disabled]="formulario.invalid" (click)="onSalvar()">{{buttonLabel}}</button>
+        </div>
       </mat-grid-tile>
     </mat-grid-list>
   </form>

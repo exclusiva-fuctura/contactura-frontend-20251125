@@ -21,15 +21,17 @@
               <input matInput formControlName="senha" type="password">
             </mat-form-field>
           </div>
-          <div class="child">
-            <button mat-raised-button color="primary"  
-              [disabled]="formulario.invalid" (click)="onLogon()">Entrar</button>
+          <div class="child-button">
+            <button mat-raised-button 
+              color="primary"  
+              [disabled]="formulario.invalid" 
+              (click)="onLogon()">Entrar</button>
           </div>
-          <div class="child">
-            
-              <button mat-raised-button class="button">cadastre-se</button>
-            
-              <button mat-raised-button class="button">recuperar senha</button>
+          <div class="child-button">            
+              <button mat-raised-button 
+                class="button">cadastre-se</button>            
+              <button mat-raised-button 
+                class="button">recuperar senha</button>
           </div>
         </form>
         <!-- formulario -->

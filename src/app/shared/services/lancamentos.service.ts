@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Lancamento } from '../models/lancamento';
 import { AppSettings } from '../../app.settings';
-import { DaoService } from './dao-service';
+import { DaoService } from './dao.service';
 import { IDespesa } from '../models/despesa.interface';
 import { IReceita } from '../models/receita.interface';
 import { OperacaoTypeEnum } from '../enums/operacao-type.enum';
